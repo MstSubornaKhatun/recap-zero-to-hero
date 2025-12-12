@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* 1. descendant selector */
+        div p {
+            color: chocolate;
+
+        }
+        /* 2. Child selector */
+        ul > li {
+            color: aquamarine;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. descendant selector  -->
+    <div>
+        <p style="color: red;">Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem, ipsum.</p>
+    </div>
+    <!-- 2. Child selector -->
+     <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Lichi</li>
+        <li>Orange</li>
+        <li>Mango</li>
+     </ul>
+<!-- border -->
+     <p style="border: 5px solid greenyellow; border-radius: 10px;">Lorem ipsum dolor sit amet consectetur.</p>
+     <p style="border-bottom: 8px solid tomato;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, porro aperiam. Vero repellat beatae quos esse voluptas? Perferendis cum tempora magni quia officiis molestiae doloribus? Quae tenetur iusto consectetur aliquid, molestias obcaecati quod reiciendis? ipsum dolor sit.</p>
+     <p style="margin: 80px; border: 1px solid tomato; padding: 20px;">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga cumque fugiat pariatur consectetur at magni voluptatem, numquam iste quam nam voluptatibus incidunt aut ex totam maiores nihil magnam nemo.</p>
+     <!-- element hidden and also place hidden -->
+     <div style="display: none;">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptatum eius necessitatibus dolorum ut, vitae ad quasi asperiores alias porro, esse quia repellendus libero excepturi aut harum eveniet. Earum, distinctio?</p>
+     </div>
+     <!-- element hidden but place not hidden -->
+     <div style="visibility: hidden;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit commodi at perferendis repudiandae cupiditate eos voluptatem, fuga soluta earum optio doloribus recusandae debitis placeat, dolorum ipsa libero nihil voluptas!</p>
+     </div>
+
+     <!-- box shadow -->
+     <p style="border: 1px solid salmon; box-shadow: 2px 5px 7px gray;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptatum.</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed vs Sticky</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* 🔴 FIXED EXAMPLE */
+    .fixed-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 120px;
+      height: 50px;
+      background-color: crimson;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+
+    /* 🟢 STICKY EXAMPLE */
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      height: 60px;
+      background-color: steelblue;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    /* Content to create scroll */
+    .content {
+      height: 2000px;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <div class="sticky-header">
+    🟢 I am STICKY Header
+  </div>
+
+  <!-- Scroll Content -->
+  <div class="content">
+    <p>Scroll down ⬇⬇⬇</p>
+    <p>
+      Sticky header প্রথমে normal থাকে,  
+      উপরে গেলে screen এ আটকে যায়।
+    </p>
+  </div>
+
+  <!-- Fixed Button -->
+  <div class="fixed-box">
+    🔴 FIXED Box
+  </div>
+
+</body>
+</html>

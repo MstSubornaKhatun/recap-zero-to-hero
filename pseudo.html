@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        h1::after {
+            content: '.pdf';
+            color: red;
+        }
+
+        h1::before {
+            content: 'start.';
+            color: green;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+        }
+
+        p::first-line {
+            background-color: yellowgreen;
+
+        }
+
+
+        ::selection {
+            background-color: yellow;
+        }
+
+        input::placeholder {
+            color: blue;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Rasume-of-Suborna</h1>
+    <p>Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla molestias ab repellendus et aliquid ducimus. Iusto ab, corporis quis voluptatum blanditiis unde dicta officiis placeat facere maiores labore suscipit ea. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis non earum eos architecto corporis. Nihil reiciendis officiis ea maxime doloremque quae possimus, explicabo, velit voluptatem, ex voluptas soluta eaque obcaecati! amet consectetur adipisicing elit. Minima nulla veniam alias in aliquid! Eaque officia magnam aliquid laboriosam sit enim, perferendis odit eligendi quo consequuntur vitae, facere, molestias amet.</p>
+    <input type="text" placeholder="Enter Your Name">
+</body>
+</html>
